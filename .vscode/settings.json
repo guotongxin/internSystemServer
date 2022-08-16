@@ -1,0 +1,84 @@
+{
+  "terminal.integrated.confirmOnExit": true,
+  "workbench.editor.tabCloseButton": "right",
+  // 以下为编辑器配置
+  "editor.fontSize": 16, // 文字大小
+  "editor.tabSize": 2, // 使用 tab 缩紧的时候几个空格的位置
+  "editor.dragAndDrop": false, // 控制编辑器是否允许拖动来移动内容
+  "editor.detectIndentation": false, // 控制打开时候自动检测插入内容是 space 还是 tab
+  "editor.quickSuggestions": {
+    // 是否启用代码联想
+    "other": true, // 在注释和字符串外启用联想
+    "comments": true, // 注释中是否启用
+    "strings": true // 字符串中是否启用
+  }, // 编辑器保存时自动格式化
+  "csscomb.preset": {
+    "remove-empty-rulesets": true, // 移除空规则集
+    "always-semicolon": true, // 每个样式后面添加分号
+    "lines-between-rulesets": 1, // 每个规则集后面添加一个空行
+    "leading-zero": false, // 为 0 的属性是否要加 px
+    "unitless-zero": false, // 是否删除 0 值后面的单位
+    "quotes": "single", // 单引号还是双引号
+    "space-after-colon": " ", // 在属性的 : 后面空格
+    "space-before-colon": "", // 在属性的 : 前面空格
+    "space-after-combinator": " ", // 在子代选择器或者相邻选择器之类的符号后面加空格
+    "space-before-combinator": " ", // 在子代选择器或者相邻选择器之类的符号前面加空格
+    "strip-spaces": true, // 修剪尾随空格
+    "vendor-prefix-align": false // 是否在属性值中对齐前缀
+  },
+  "window.restoreWindows": "one",
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
+  "update.enableWindowsBackgroundUpdates": false,
+  "explorer.confirmDragAndDrop": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.run": "onType",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+
+  "emmet.triggerExpansionOnTab": true,
+
+  "px2rem.rootFontSize": 24,
+  "px2rem.isNeedNotes": false,
+  "px2vw.width": 375,
+  "px2vw.toFixedNum": 1,
+  "px2rem.autoRemovePrefixZero": false,
+  "px2rem.fixedDigits": 3,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Panda Syntax",
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (EEx)",
+    "HTML (Eex)",
+    "plist"
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always"
+}
